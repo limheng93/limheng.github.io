@@ -1,0 +1,358 @@
+body {
+  background: #0091ea;
+  margin: 0px;
+  padding: 0px;
+}
+
+#HeaderSection {
+  background-color: #ffc400;
+}
+#HeaderSection img {
+  width: 120px;
+}
+
+#navbar {
+  padding: 0px;
+  margin: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  background-color: #000000;
+}
+#navbar .topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+#navbar .topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar .topnav a:hover {
+  background-color: #ffe082;
+  color: black;
+}
+#navbar .topnav a.active {
+  background-color: #ffa000;
+  color: #ffee58;
+}
+#navbar .topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  #navbar .topnav a:not(:first-child) {
+    display: none;
+  }
+  #navbar .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  #navbar .topnav.responsive {
+    position: relative;
+  }
+  #navbar .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #navbar .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*This is section1*/
+#section1 {
+  margin-top: 80px;
+  padding: 0px;
+  /* START  For hover images to pop up text*/
+  /* EMD  For hover images to pop up text*/
+}
+#section1 .path {
+  background: #757575;
+  position: relative;
+}
+#section1 .spot {
+  margin: 0px;
+  position: absolute;
+  background: #ff6d00;
+  opacity: none;
+  padding: 5px;
+  top: 0px;
+  z-index: 16;
+}
+#section1 h4 {
+  font-weight: bold;
+  color: yellow;
+  font-size: 20px;
+}
+#section1 p {
+  color: #fff;
+  font-size: 17px;
+}
+#section1 .imghover {
+  z-index: 10;
+  opacity: 0.5;
+}
+#section1 .path .sticker {
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  top: 77%;
+  z-index: 13;
+  font-size: 18px;
+  font-weight: bold;
+}
+#section1 .textOverlay {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 35px;
+  z-index: 11;
+}
+#section1 .textOverlay .brief-text {
+  display: none;
+  transition: 1s;
+}
+#section1 .path:hover > .textOverlay .brief-text {
+  display: block;
+  transition: 1s;
+}
+#section1 .flex-column {
+  padding: 0px;
+  margin: 0px;
+}
+#section1 .flex-column img {
+  height: 220px;
+}
+#section1 .flex-column:hover img {
+  cursor: pointer;
+}
+#section1 .textOverlay:hover {
+  cursor: pointer;
+}
+#section1 .commerce {
+  padding-left: 10px;
+}
+@media (max-width: 991px) {
+  #section1 .row {
+    padding: 0px;
+  }
+  #section1 .textOverlay {
+    top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  #section1 .row {
+    padding: 20px 100px;
+  }
+  #section1 .commerce {
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+  #section1 .commerce img {
+    display: inline-block;
+    padding: 10px 80px;
+    height: 170px;
+  }
+}
+@media (max-width: 620px) {
+  #section1 .row {
+    padding: 10px 50px;
+  }
+  #section1 .commerce img {
+    height: 180px;
+  }
+}
+@media (max-width: 450px) {
+  #section1 .row {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 360px) {
+  #section1 .commerce img {
+    height: 120px;
+  }
+}
+@media (max-width: 290px) {
+  #section1 .commerce img {
+    height: 90px;
+  }
+}
+
+/*This is section2*/
+#section2 {
+  margin: 80px 0px;
+  padding: 0px;
+}
+#section2 .bgcontain {
+  background: white;
+  padding: 20px 5px;
+  box-shadow: 0px 2px 3px 3px gray;
+}
+#section2 .coola img {
+  height: 170px;
+}
+#section2 .coola img:hover {
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+#section2 .coola p {
+  cursor: pointer;
+}
+#section2 .coolb img {
+  height: 100px;
+}
+#section2 .coolb img:hover {
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+#section2 .coolb p {
+  cursor: pointer;
+}
+#section2 .img-add img {
+  margin-bottom: 10px;
+  height: 60px;
+}
+@media (max-width: 767px) {
+  #section2 .bgcontain {
+    width: 70%;
+  }
+  #section2 .suber {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  #section2 .suber img {
+    height: 110px;
+  }
+  #section2 .coola {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 440px) {
+  #section2 .img-add img {
+    height: 30px;
+  }
+  #section2 .coola img {
+    height: 120px;
+  }
+  #section2 .coolb img {
+    height: 100px;
+  }
+}
+
+/*This is section3*/
+#section3 {
+  padding: 0px;
+  margin: 70px 0px;
+}
+#section3 .bgcontain {
+  text-align: center;
+  background: white;
+  padding: 20px 5px;
+  box-shadow: 0px 2px 3px 3px gray;
+}
+#section3 .bgcontain .subnewsa {
+  background: #00e5ff;
+}
+#section3 .bgcontain .subnewsa p {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#section3 .bgcontain .subnewsa:hover > img, #section3 .bgcontain p {
+  cursor: pointer;
+}
+#section3 .bgcontain .newsb:hover img, #section3 .bgcontain p {
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  #section3 .bgcontain {
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  #section3 .bgcontain {
+    width: 90%;
+  }
+  #section3 .bgcontain .subnewsa p {
+    font-size: 12px;
+  }
+}
+
+/*This is footer*/
+#footer {
+  background: #000;
+  color: #bdbdbd;
+  padding: 20px;
+  margin: 30px 0px 0px 0px;
+}
+#footer .patha {
+  padding: 10px;
+}
+#footer .patha img {
+  width: 50%;
+  padding-bottom: 10px;
+}
+#footer .patha p {
+  font-size: 15px;
+}
+#footer .patha p strong {
+  color: #fff;
+}
+#footer .pathb {
+  padding: 30px;
+}
+#footer .pathb .title {
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+#footer .pathb p strong {
+  color: white;
+}
+#footer .pathc {
+  padding: 30px;
+}
+#footer .pathc .title {
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+#footer .pathc .list-socail i {
+  font-size: 30px;
+  margin-right: 15px;
+}
+#footer .pathc .small {
+  font-size: 17px;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  #footer .container {
+    width: 85%;
+  }
+  #footer .container .patha img {
+    width: 150px;
+  }
+}
+@media (max-width: 360px) {
+  #footer .container .patha img {
+    width: 110px;
+  }
+}
+@media (max-width: 200px) {
+  #footer .container .patha img {
+    width: 20%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
